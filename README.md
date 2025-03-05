@@ -18,15 +18,18 @@ more spaces.
 Viewers that exhibit the bug include:
 
 - [Typedown](https://apps.microsoft.com/detail/9p8tcw4h2hb4?hl=en-US&gl=US) (Windows)
-- [Simple Markdown](https://play.google.com/store/apps/details?id=com.wbrawner.simplemarkdown) (Android)
+- [Simple Markdown](https://play.google.com/store/apps/details?id=com.wbrawner.simplemarkdown)
+  (Android)
 - [Obsidian](https://obsidian.md/) (Windows, Linux, Android)
 - [SimpleNote](https://simplenote.com/) (Windows (Android app is ok))
 
 Viewers that handle this correctly include:
 
-- [Visual Studio Code](https://code.visualstudio.com/) (Windows and Linux, preview mode)
+- [Visual Studio Code](https://code.visualstudio.com/)
+  (Windows and Linux, preview mode)
 - [Okular](https://okular.kde.org/) (Windows)
-- [Markdown View](https://apps.microsoft.com/detail/9pj021lr0m3g?hl=en-US&gl=US) (Windows)
+- [Markdown View](https://apps.microsoft.com/detail/9pj021lr0m3g?hl=en-US&gl=US)
+  (Windows)
 - [EZ Markdown](https://apps.ape-apps.com/ez-markdown/) (Windows)
 - [UpNote](https://getupnote.com/) (Windows)
 - [SimpleNote](https://simplenote.com/) (Android (Windows app is affected))
@@ -36,7 +39,7 @@ Viewers that handle this correctly include:
 
 Tools that convert Markdown to HTML
 are unaffected as far as I can tell
-(HTML viewed with Chrome):
+(HTML viewed with Chrome and Lynx):
 
 - [Pandoc](https://pandoc.org/)
 - [Markdown](https://daringfireball.net/projects/markdown/)
@@ -73,7 +76,7 @@ I don't test that here.)
 
 ---
 
-### The following should be a single line:
+## The following should be a single line
 
 Line one
 Line two
@@ -81,7 +84,7 @@ Line three
 
 ---
 
-### The following should be a single line of quoted text:
+## The following should be a single line of quoted text
 
 > Line one
 > Line two
@@ -89,7 +92,7 @@ Line three
 
 ---
 
-### The following should be three lines (explicit line breaks):
+## The following should be three lines (explicit line breaks)
 
 Line one  
 Line two  
@@ -97,7 +100,7 @@ Line three
 
 ---
 
-### The following should be three bulleted lines:
+## The following should be three bulleted lines
 
 - Line one
 - Line two
