@@ -2,7 +2,18 @@
 
 This illustrates a bug in some Markdown
 viewers.  Examples are at the bottom
-of this file
+of this file.
+
+The bug is that line endings within
+a paragraph are rendered as line
+breaks in the displayed output.  The
+[Daring Fireball Markdown Syntax](https://daringfireball.net/projects/markdown/syntax#p)
+and
+[CommonMark Spec](https://spec.commonmark.org/0.31.2/#paragraphs)
+both make it clear that line breaks
+within a paragraph are to be ignored,
+unless the line ends with two or
+more spaces.
 
 Viewers that exhibit the bug include:
 
@@ -21,6 +32,7 @@ Viewers that handle this correctly include:
 - [SimpleNote](https://simplenote.com/) (Android (Windows app is affected))
 - [GitHub web interface](https://github.com/Keith-S-Thompson/markdown-linewrap)
 - [Stack Overflow web interface](https://stackoverflow.com/)
+- [Reddit web interface](https://reddit.com/)
 
 Tools that convert Markdown to HTML
 are unaffected as far as I can tell
