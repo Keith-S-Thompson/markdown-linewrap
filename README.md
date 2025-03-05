@@ -5,12 +5,14 @@ viewers.  Affected viewers include:
 
 - [Typedown](https://apps.microsoft.com/detail/9p8tcw4h2hb4?hl=en-US&gl=US) (Windows)
 - [Simple Markdown](https://play.google.com/store/apps/details?id=com.wbrawner.simplemarkdown) (Android)
+- [Obsidian](https://obsidian.md/) (Windows, Linux, Android)
 
 Viewers that handle this correctly include:
 
 - [Visual Studio Code](https://code.visualstudio.com/) (Windows and Linux, preview mode)
 - [Okular](https://okular.kde.org/) (Windows)
 - [Markdown View](https://apps.microsoft.com/detail/9pj021lr0m3g?hl=en-US&gl=US) (Windows)
+- [EZ Markdown](https://apps.ape-apps.com/ez-markdown/) (Windows)
 - [GitHub web interface](https://github.com/Keith-S-Thompson/markdown-linewrap)
 - [Stack Overflow web interface](https://stackoverflow.com/)
 
@@ -35,34 +37,42 @@ Line one
 Line two
 Line three
 
+---
+
 The following is the same, but with
 two trailing spaces on each line.
 The trailing spaces should create a
 line break in the output.  Most or all
 Markdown viewers handle this correctly.
 
-*The following should be a three lines:*  
+### The following should be a three lines:
 
 Line one  
 Line two  
 Line three  
+
+---
 
 The following is the same rendered as
 an unordered list, without the trailing
 spaces.  Most or all Markdown viewers
 handle this correctly.
 
-*The following should be three bulleted lines:*
+### The following should be three bulleted lines:
 
 - Line one
 - Line two
 - Line three
 
+---
+
 The following is the same, but as a
 block of quoted text.
 
-*The following should be a single line of quoted text:*  
+### The following should be a single line of quoted text:
 
 > Line one
 > Line two
 > Line three
+
+---
