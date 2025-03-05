@@ -8,10 +8,10 @@ viewers.  Affected viewers include:
 
 Viewers that handle this correctly include:
 
-- [Visual Studio Code](https://code.visualstudio.com/) (Windows and Linux)
+- [Visual Studio Code](https://code.visualstudio.com/) (Windows and Linux, preview mode)
 - [Okular](https://okular.kde.org/) (Windows)
 - [Markdown View](https://apps.microsoft.com/detail/9pj021lr0m3g?hl=en-US&gl=US) (Windows)
-- [GitHub web interface](https://gist.github.com/Keith-S-Thompson/c635d4e5c8b2df40321919776c2142e5)
+- [GitHub web interface](https://github.com/Keith-S-Thompson/markdown-linewrap)
 - [Stack Overflow web interface](https://stackoverflow.com/)
 
 All paragraphs in this file are wrapped
