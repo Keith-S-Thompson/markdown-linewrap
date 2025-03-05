@@ -31,7 +31,7 @@ line "Line one Line two Line three".
 Some Markdown viewers incorrectly pass
 the line breaks through to the output.
 
-*The following should be a single line:*  
+### The following should be a single line:
 
 Line one
 Line two
@@ -45,7 +45,7 @@ The trailing spaces should create a
 line break in the output.  Most or all
 Markdown viewers handle this correctly.
 
-### The following should be a three lines:
+### The following should be three lines:
 
 Line one  
 Line two  
