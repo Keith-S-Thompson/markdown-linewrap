@@ -13,6 +13,7 @@ Viewers that handle this correctly include:
 - [Okular](https://okular.kde.org/) (Windows)
 - [Markdown View](https://apps.microsoft.com/detail/9pj021lr0m3g?hl=en-US&gl=US) (Windows)
 - [EZ Markdown](https://apps.ape-apps.com/ez-markdown/) (Windows)
+- [UpNote](https://getupnote.com/) (Windows)
 - [GitHub web interface](https://github.com/Keith-S-Thompson/markdown-linewrap)
 - [Stack Overflow web interface](https://stackoverflow.com/)
 
