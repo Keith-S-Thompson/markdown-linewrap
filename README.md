@@ -29,6 +29,8 @@ line "Line one Line two Line three".
 Some Markdown viewers incorrectly pass
 the line breaks through to the output.
 
+*The following should be a single line:*  
+
 Line one
 Line two
 Line three
@@ -39,6 +41,8 @@ The trailing spaces should create a
 line break in the output.  Most or all
 Markdown viewers handle this correctly.
 
+*The following should be a three lines:*  
+
 Line one  
 Line two  
 Line three  
@@ -48,12 +52,16 @@ an unordered list, without the trailing
 spaces.  Most or all Markdown viewers
 handle this correctly.
 
+*The following should be three bulleted lines:*
+
 - Line one
 - Line two
 - Line three
 
 The following is the same, but as a
 block of quoted text.
+
+*The following should be a single line of quoted text:*  
 
 > Line one
 > Line two
