@@ -1,11 +1,15 @@
 # markdown-linewrap
 
 This illustrates a bug in some Markdown
-viewers.  Affected viewers include:
+viewers.  Examples are at the bottom
+of this file
+
+Viewers that exhibit the bug include:
 
 - [Typedown](https://apps.microsoft.com/detail/9p8tcw4h2hb4?hl=en-US&gl=US) (Windows)
 - [Simple Markdown](https://play.google.com/store/apps/details?id=com.wbrawner.simplemarkdown) (Android)
 - [Obsidian](https://obsidian.md/) (Windows, Linux, Android)
+- [SimpleNote](https://simplenote.com/) (Windows (Android app is ok))
 
 Viewers that handle this correctly include:
 
@@ -14,23 +18,48 @@ Viewers that handle this correctly include:
 - [Markdown View](https://apps.microsoft.com/detail/9pj021lr0m3g?hl=en-US&gl=US) (Windows)
 - [EZ Markdown](https://apps.ape-apps.com/ez-markdown/) (Windows)
 - [UpNote](https://getupnote.com/) (Windows)
+- [SimpleNote](https://simplenote.com/) (Android (Windows app is affected))
 - [GitHub web interface](https://github.com/Keith-S-Thompson/markdown-linewrap)
 - [Stack Overflow web interface](https://stackoverflow.com/)
 
-All paragraphs in this file are wrapped
+Tools that convert Markdown to HTML
+are unaffected as far as I can tell
+(HTML viewed with Chrome):
+
+- [Pandoc](https://pandoc.org/)
+- [Markdown](https://daringfireball.net/projects/markdown/)
+- [Python-Markdown](https://github.com/Python-Markdown/markdown)
+
+Most paragraphs in this file are wrapped
 with `fmt -40`.  Such paragraphs should
 still be wrapped to the width chosen
 by the viewer software.
 
-The following consists of 3 lines
-of text with no trailing spaces.
-When rendered, the entire block should
-be filled and rendered as a single
-paragraph.  With a sufficiently wide
-display, it should be shown as a single
-line "Line one Line two Line three".
+The bug is is particularly annoying when the input text is wrapped at, say,
+80 columns and the output is 60 columns.  The bug can cause the paragraph
+to be rendered as alternating 60- and 20-column lines.  (It's not quite that
+simple, since output typically uses a variable-width font.)  This paragraph
+is formatted with `fmt -80`.
+
+A block of plain text, should be filled
+and rendered as a single paragraph.
+In the following examples, such a
+paragraph should be shown as a single
+line "Line one Line two Line three",
+assuming a sufficiently wide display.
 Some Markdown viewers incorrectly pass
 the line breaks through to the output.
+
+The same applies to a block of quoted
+text.
+
+Line breaks can be inserted by adding
+two spaces to the end of a line.
+A bulleted list also shows one item per
+line.  (Long lines should be wrapped;
+I don't test that here.)
+
+---
 
 ### The following should be a single line:
 
@@ -40,13 +69,15 @@ Line three
 
 ---
 
-The following is the same, but with
-two trailing spaces on each line.
-The trailing spaces should create a
-line break in the output.  Most or all
-Markdown viewers handle this correctly.
+### The following should be a single line of quoted text:
 
-### The following should be three lines:
+> Line one
+> Line two
+> Line three
+
+---
+
+### The following should be three lines (explicit line breaks):
 
 Line one  
 Line two  
@@ -54,26 +85,10 @@ Line three
 
 ---
 
-The following is the same rendered as
-an unordered list, without the trailing
-spaces.  Most or all Markdown viewers
-handle this correctly.
-
 ### The following should be three bulleted lines:
 
 - Line one
 - Line two
 - Line three
-
----
-
-The following is the same, but as a
-block of quoted text.
-
-### The following should be a single line of quoted text:
-
-> Line one
-> Line two
-> Line three
 
 ---
