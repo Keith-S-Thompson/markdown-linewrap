@@ -18,8 +18,6 @@ more spaces.
 Viewers that exhibit the bug include:
 
 - [Typedown](https://apps.microsoft.com/detail/9p8tcw4h2hb4?hl=en-US&gl=US) (Windows)
-- [Simple Markdown](https://play.google.com/store/apps/details?id=com.wbrawner.simplemarkdown)
-  (Android)
 - [Obsidian](https://obsidian.md/) (Windows, Linux, Android)
 - [SimpleNote](https://simplenote.com/) (Windows (Android app is ok))
 
@@ -32,6 +30,8 @@ Viewers that handle this correctly include:
   (Windows)
 - [EZ Markdown](https://apps.ape-apps.com/ez-markdown/) (Windows)
 - [UpNote](https://getupnote.com/) (Windows)
+- [Simple Markdown](https://play.google.com/store/apps/details?id=com.wbrawner.simplemarkdown)
+  (Android)
 - [SimpleNote](https://simplenote.com/) (Android (Windows app is affected))
 - [GitHub web interface](https://github.com/Keith-S-Thompson/markdown-linewrap)
 - [Stack Overflow web interface](https://stackoverflow.com/)
