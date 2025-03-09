@@ -18,8 +18,17 @@ more spaces.
 Viewers that exhibit the bug include:
 
 - [Typedown](https://apps.microsoft.com/detail/9p8tcw4h2hb4?hl=en-US&gl=US) (Windows)
-- [Obsidian](https://obsidian.md/) (Windows, Linux, Android)
-- [SimpleNote](https://simplenote.com/) (Windows (Android app is ok))
+- [Obsidian](https://obsidian.md/) (Windows, Linux, Android)  
+  Obsidian has an option in settings: Editor > Display > Strict line breaks.  
+  This option is disabled by default.  Enabling it make it display
+  paragraphs correctly, but only in "reading view".
+- [SimpleNote](https://simplenote.com/) (Windows, Linux, web interface) (Android app is ok))  
+  I emailed the author and got a reply:  
+  > Hello, thank you for using this app, a new version of this app
+  > completely refactored is in development. But I'm very sorry, as
+  > this is a hobby project and I'm currently busy with work, the old
+  > version didn't have time to fix the known issues, which will be
+  > fixed along with the new version.
 
 Viewers that handle this correctly include:
 
